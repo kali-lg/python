@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>浙江省银行业协会</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">  var $j = jQuery.noConflict();  </script>
+<script src="js/png.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/mootools.js"></script>
+</head>
+<script type="text/javascript">
+$j(document).ready(function(){
+	var duilian = $j("div.duilian");
+	var duilian_close = $j("a.duilian_close");
+	
+	var window_w = $j(window).width();
+	if(window_w>1000){duilian.show();}
+	$j(window).scroll(function(){
+		var scrollTop = $j(window).scrollTop();
+		duilian.stop().animate({top:scrollTop+160});
+	});
+	duilian_close.click(function(){
+		$j(this).parent().hide();
+		return false;
+	});
+	
+});
+</script>
+<script type="text/javascript">
+setInterval("weather()", 3000);
+function down(name){
+var name1=name;
+//alert(name1);
+document.getElementById(name1).value='';
+}
+function leve(name){
+var name1=name;
+var val=document.getElementById(name1).value;
+if(val==''){
+	if(name1=='name'){
+	document.getElementById('name').value='请输入用户名';
+	}else if(name1=='yhname'){
+	document.getElementById('yhname').value='请输入银行简称';
+	}else{
+	document.getElementById('pass').value='请输入密码';
+	}
+}
+}
+function weather(){
+var myids=new Array("101210101","101210102","101210103","101210104","101210105","101210106","101210107","101210108","101210201","101210202","101210203","101210204","101210301","101210302","101210303","101210304","101210305","101210306","101210401","101210403","101210404","101210405","101210406","101210407","101210408","101210409","101210410","101210411","101210412","101210501","101210502","101210503","101210504","101210505","101210601","101210602","101210603","101210604","101210605","101210606","101210607","101210608","101210609","101210701","101210702","101210703","101210704","101210705","101210706","101210707","101210708","101210709","101210801","101210802","101210803","101210804","101210805","101210806","101210807","101210901","101210902","101210903","101210904","101210905","101210906","101210907","101210908","101211001","101211002","101211003","101211004","101211005","101211101","101211102","101211103","101211104","101211105","101211106");
+var rom=Math.floor(Math.random()*16); 
+/*
+$j.get('live.php?cid='+myids[rom], function(data) {
+	if(data){
+	var words=data.split("@");
+	$j(".weaher").html(words[2]+"&nbsp;"+words[1]+"&nbsp;"+words[4]+"&nbsp;"+words[5]);
+	}
+});
+*/
+
+}
+function tishi(id){
+	if(id==1){
+		alert("抱歉，此操作被浏览器拒绝！请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+		}else if(id==2){
+         alert("抱歉，您所使用的浏览器无法完成此操作。加入收藏失败，请使用Ctrl+D进行添加");
+			}
+}
+
+</script>
+<style>
+/*下面是对联广告的css代码*/
+.duilian{top:260px;position:absolute; width:102px; overflow:hidden; display:none;}
+.duilian_left{ left:6px;}
+.duilian_right{right:6px;}
+.duilian_con{border:#CCC solid 1px; width:100px; height:300px; overflow:hidden;}
+.duilian_close{ width:100%; height:24px; line-height:24px; text-align:center; display:block; font-size:13px; color:#555555; text-decoration:none;}
+</style>
+<body onLoad="weather()">
+<!--下面是对联广告的html代码结构-->
+<div class="duilian duilian_left">
+	<div class="duilian_con"><a href='http://sgzj42.ata-test.net:7942/SGZJ42reg/Default.aspx'  target="__blank"><img src='http://www.zjabank.org//upload_img/news/small/1435562771.429.jpg' width="103" height="303"></a></div>
+    <a href="#" class="duilian_close">X关闭</a>
+</div>
+<div class="duilian duilian_right">
+	<div class="duilian_con"><a href='http://www.china-cba.net/list.php?fid=240' target="__blank"><img src='http://www.zjabank.org//upload_img/news/small/1403250053.419.jpg' width="103" height="303"></a></div>
+    <a href="#" class="duilian_close">X关闭</a>
+</div>
+<div style="text-align:center;">
+<a href="javascript:;"><img src="http://www.zjabank.org/images/header_newyear.jpg" align="center" border="0"/></a>
+</div>
+<div style="text-align:center;">
+<a href="http://zyyp.zjabank.org/home"><img src="http://www.zjabank.org//upload_img/news/1447313397.268.jpg" align="center" border="0"/></a>
+</div>
+	<div class="head">
+		<div class="logo"><a href="#" title=""><img src="images/logo.png"></a></div>
+		<div class="flash">
+		  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="450" height="70">
+            <param name="movie" value="flash.swf" />
+            <param name="quality" value="high" />
+			<param name="WMode" value="Transparent">
+            <embed src="flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="450" height="70" wmode="Transparent" ></embed>
+	      </object>
+		</div>
+		<div class="sc"><a href="#" title="" onClick="tishi(1)">设为首页</a>|<a href="#" title="" onClick="tishi(2)">加入收藏</a></div>
+		<div class="cl"></div>
+		
+	</div>
+	<div class="menu">
+	<div class="menu_up">
+	<a href="../index.php" title="" onmouseover="navshow(0)">网站首页</a>
+			<span></span><a href="../article.php?tid=1&mid=2&aid=30590" class="" title="" id="" onmouseover="navshow(1)">关于协会</a>
+			<span></span><a href="../article_list.php?tid=10" class="" title="" id="" onmouseover="navshow(10)">协会动态</a>
+			<span></span><a href="../article_list.php?tid=9" class="" title="" id="" onmouseover="navshow(9)">专业委员会</a>
+			<span></span><a href="../article_list.php?tid=8" class="" title="" id="" onmouseover="navshow(8)">财经动态</a>
+			<span></span><a href="../article_list.php?tid=7" class="" title="" id="" onmouseover="navshow(7)">会员信息</a>
+			<span></span><a href="../article_list.php?tid=5" class="" title="" id="" onmouseover="navshow(5)">公众金融服务</a>
+	<span></span>
+	<div class="weaher"></div>
+	<div class="cl"></div>
+	</div>
+		<div class="menu_list" id="navshow1" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+	 
+	<a href="../article.php?mid=1&aid=30587" title="" >协会简介</a>
+				
+				  
+	<a href="../article.php?mid=1&aid=30588" title="" >协会章程</a>
+				
+				  
+	<a href="../article.php?mid=1&aid=30591" title="" >组织架构</a>
+				
+				  
+	<a href="../article.php?mid=1&aid=30589" title="" >第五届理事会</a>
+				
+				  
+	<a href="../article.php?mid=1&aid=30590" title="" >会员单位</a>
+				
+				  
+	<a href="../article.php?mid=1&aid=30651" title="" >入（退）会申请</a>
+				
+				 	</div>
+		<div class="menu_list" id="navshow10" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+					<a href="../article_list.php?tid=10&mid=14" title="" >重要公告</a>
+								<a href="../article_list.php?tid=10&mid=15" title="" >协会要闻</a>
+								<a href="../article_list.php?tid=10&mid=79" title="" >重要发文  </a>
+								<a href="../article_list.php?tid=10&mid=80" title="" >评先创优</a>
+								<a href="../article_list.php?tid=10&mid=81" title="" >电子会刊</a>
+								<a href="../article_list.php?tid=10&mid=140" title="" >代表处动态</a>
+								<a href="../article_list.php?tid=10&mid=99" title="" >教育实践活动</a>
+					</div>
+		<div class="menu_list" id="navshow9" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+		<a href="../article_list.php?tid=19" title="">银团贷款专委会</a>
+		<a href="../article_list.php?tid=20" title="">信贷业务专委会</a>
+		<a href="../article_list.php?tid=28" title="">法律专委会</a>
+		<a href="../article_list.php?tid=26" title="">个人金融业务专委会</a>
+		<a href="../article_list.php?tid=23" title="">外汇业务专委会</a>
+		<a href="../article_list.php?tid=53" title=""> 结算与电子银行专委会</a>
+		<a href="../article_list.php?tid=21" title="">消费者权益保护专委会</a>
+		<a href="../article_list.php?tid=16" title="">自律专委会</a>
+		<a href="../article_list.php?tid=24" title="">企业文化工作及履行社会责任专委会</a>
+		<a href="../article_list.php?tid=25" title="">教育培训专委会</a>
+		<a href="../article_list.php?tid=27" title="">非银机构专委会</a>
+		<a href="../article_list.php?tid=22" title="">外资银行专委会</a>
+		<a href="../article_list.php?tid=134" title="">新型农村金融机构专委会</a>
+		</div>
+		<div class="menu_list" id="navshow8" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+					<a href="../article_list.php?tid=8&mid=17" title="" >财经动态</a>
+					</div>
+		<div class="menu_list" id="navshow7" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+					<a href="../article_list.php?tid=7&mid=88" title="" >会员动态</a>
+								<a href="../article_list.php?tid=7&mid=18" title="" >业务创新</a>
+								<a href="../article_list.php?tid=7&mid=84" title="" >工作研究</a>
+								<a href="../article_list.php?tid=7&mid=82" title="" >浙银文化</a>
+								<a href="../article_list.php?tid=7&mid=126" title="" >文明规范服务</a>
+								<a href="../article_list.php?tid=7&mid=89" title="" >地市协会动态</a>
+								<a href="../article_list.php?tid=7&mid=141" title="" >支实支农支小</a>
+					</div>
+		<div class="menu_list" id="navshow5" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';" style="display:none;">
+	<a href="../xhcp/index.php">特色产品查询</a>
+		
+				 					<a href="../article_list.php?tid=5&mid=86" title="" >普及金融知识</a>
+								<a href="../article_list.php?tid=5&mid=87" title="" >社会责任在行动</a>
+								<a href="../article_list.php?tid=5&mid=132" title="" >互联网金融</a>
+								<a href="../article_list.php?tid=5&mid=121" title="" >企业家风险教育系列活动</a>
+								<a href="../article_list.php?tid=5&mid=103" title="" >信托投资者教育系列活动</a>
+								<a href="../article_list.php?tid=5&mid=109" title="" >金融知识进万家系列活动</a>
+					</div>
+		<input type="hidden" id="navid" value="" />
+</div>
+<script language="javascript" type="text/javascript">
+/*
+function InsertSixtyDiv(sHtml,sBackground)
+{
+	document.body.insertAdjacentHTML("afterBegin",sHtml);
+	document.body.style.background = sBackground;
+}
+function CloseSixtyDiv(){
+	document.getElementById('SixtyDiv').style.display = 'none';	
+	document.body.style.background = '#fff';
+	//设置cookie
+　　 var Days = 0; //cookie时间 0为浏览器进程
+　　 var exp　　 = new Date();　　　　 //new Date("December 31, 9998");
+　　 exp.setTime(exp.getTime() + Days*24*60*60*1000);
+　　 document.cookie = "IsShowSixtyDiv=1;expire="+ exp.toGMTString();
+}
+
+var IsShowSixtyDiv = document.cookie.match(new RegExp("(^| )IsShowSixtyDiv=([^;]*)(;|$)"));
+if(IsShowSixtyDiv == null){
+	var str1 = "<div id=\"SixtyDiv\"><div style=\"margin:0px auto; width:980px; height:60px;text-align:right;cursor:pointer\"><font color=\"#ffffff\"><a onclick=\"CloseSixtyDiv()\">关闭</a></font></div>";//广告div
+	var str2 = "#ffffff url(\http://www.hangzhou.com.cn/extra/images/2015newyear.jpg) top center no-repeat";//背景样式
+	InsertSixtyDiv(str1,str2)
+}
+*/
+</script>		<div class="container">
+		
+		<div style="width:965px;height:300px;">
+			<!--轮播 开始-->
+			<div id="banner"> 
+			<ul>
+			<li class="on" id="1"><img src="http://www.zjabank.org//upload_img/news/small/1454381116.715.jpg" width="40px" height="30px"/></li>
+						<li id="2"><img src="http://www.zjabank.org//upload_img/news/small/1453183987.32.jpg" width="40px" height="30px"/></li>
+						<li id="3"><img src="http://www.zjabank.org//upload_img/news/small/1447663277.20.png" width="40px" height="30px"/></li>
+						<li id="4"><img src="http://www.zjabank.org//upload_img/news/small/1445237269.25.png" width="40px" height="30px"/></li>
+						<li id="5"><img src="http://www.zjabank.org//upload_img/news/small/1444609455.168.png" width="40px" height="30px"/></li>
+						<li id="6"><img src="http://www.zjabank.org//upload_img/news/small/1439859385.995.jpg" width="40px" height="30px"/></li>
+						<li id="7"><img src="http://www.zjabank.org//upload_img/news/small/1433118161.646.jpg" width="40px" height="30px"/></li>
+						<li id="8"><img src="http://www.zjabank.org//upload_img/news/small/1430363909.185.jpg" width="40px" height="30px"/></li>
+						<li id="9"><img src="http://www.zjabank.org//upload_img/news/small/1425016049.365.jpg" width="40px" height="30px"/></li>
+						<li id="10"><img src="http://www.zjabank.org//upload_img/news/small/1415237383.283.jpg" width="40px" height="30px"/></li>
+						<li id="11"><img src="http://www.zjabank.org//upload_img/news/small/1397638267.185.jpg" width="40px" height="30px"/></li>
+						<li id="12"><img src="http://www.zjabank.org//upload_img/news/small/1380016665.267.jpg" width="40px" height="30px"/></li>
+						</ul>
+			<div id="banner_list">
+							<a href="http://yinhangye.ape-tech.com/e/votepc/vote_explain.php" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1454381116.715.jpg" /></a>
+							<a href="http://www.zjabank.org/article.php?aid=44197" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1453183987.32.jpg" /></a>
+							<a href="http://zyyp.zjabank.org/home" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1447663277.20.png" /></a>
+							<a href="http://www.zjabank.org/article.php?aid=43092" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1445237269.25.png" /></a>
+							<a href="http://money.hangzhou.com.cn/jczt/2015yhcp/index.htm" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1444609455.168.png" /></a>
+							<a href="http://www.zjabank.org/article.php?aid=42556" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1439859385.995.jpg" /></a>
+							<a href="http://www.zjabank.org/article.php?aid=41739" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1433118161.646.jpg" /></a>
+							<a href="http://www.zjabank.org/article.php?aid=41497" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1430363909.185.jpg" /></a>
+							<a href="http://www.zjabank.org/article_list.php?tid=7&mid=144" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1425016049.365.jpg" /></a>
+							<a href="http://money.hangzhou.com.cn/jczt/2014dtjl/index.htm" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1415237383.283.jpg" /></a>
+							<a href="http://10year.zjabank.org" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1397638267.185.jpg" /></a>
+							<a href="http://zj.sina.com.cn/zt/news/yinjianhui/index.shtml?qq-pf-to=pcqq.c2c" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1380016665.267.jpg" /></a>
+						</div>
+			</div>
+			<!--轮播 结束-->
+		</div>		<div class="y_15"></div>
+		<div class="main">
+			<!--left start-->
+			<div class="left">
+			<form action="resarch.php" method="post">
+				<div class="nav"><span>站内搜索<font>Search</font></span></div>
+				<div class="search">
+					<input type="text" name="keywords" value="" class="txt"><input type="submit" value="" class="btn">
+					<div class="cl"></div>
+				</div>
+				</form>
+				<div class="y_15"></div>
+				<div class="nav"><span>公告<font>Notice</font></span><a href="article_list.php?tid=10&mid=14" title="" target="_blank">更多...</a></div>
+				<div class="notice">
+					<ul>
+													<li><a href="article.php?aid=44216" title="重要提示" target="_blank">重要提示</a><span>01.20</span></li>
+													<li><a href="article.php?aid=44215" title="公告" target="_blank">公告</a><span>01.20</span></li>
+													<li><a href="article.php?aid=44186" title="喜报：省协会多项工作获中银协表彰" target="_blank">喜报：省协会多项工作获</a><span>01.18</span></li>
+													<li><a href="article.php?aid=43910" title="新书征订公告" target="_blank">新书征订公告</a><span>12.21</span></li>
+													<li><a href="article.php?aid=43759" title="关于不法分子以银行名义欺诈金融消费者的风险提示" target="_blank">关于不法分子以银行名</a><span>12.03</span></li>
+											</ul>
+				</div>
+				<div class="y_15"></div>
+				<div class="nav"><span>财经动态<font>Financial</font></span><a href="article_list.php?tid=8&mid=17" title="" target="_blank">更多...</a></div>
+				<div class="notice">
+					<dl>
+													<dd><a href="article.php?aid=43503" title="国务院办公厅印发《关于加强金融消费者权益保护工作的指导意见》" target="_blank">国务院办公厅印发《关于加强金融</a></dd>
+													<dd><a href="article.php?aid=41674" title="浙江小微企业贷款今年一季度新增387亿元" target="_blank">浙江小微企业贷款今年一季度新增</a></dd>
+													<dd><a href="article.php?aid=40950" title="欧元区将讨论希腊新改革清单 欧洲央行不松口" target="_blank">欧元区将讨论希腊新改革清单 欧</a></dd>
+													<dd><a href="article.php?aid=40949" title="欧阳泽华：年报发布后会有上市公司退市" target="_blank">欧阳泽华：年报发布后会有上市公司</a></dd>
+													<dd><a href="article.php?aid=40513" title="周小川：央行致力稳定货币供应" target="_blank">周小川：央行致力稳定货币供应</a></dd>
+													<dd><a href="article.php?aid=40512" title="李克强释放调控信号：货币不松 财政不紧" target="_blank">李克强释放调控信号：货币不松 财</a></dd>
+											</dl>
+				</div>
+			</div>
+			<!--left end-->
+			<!--center start-->
+			<div class="center">
+				<div class="nav"><span>协会动态<font>News</font></span><a href="article_list.php?tid=10" title="" target="_blank">更多...</a></div>
+				<div class="news">
+					<div class="top">
+						<a href="article.php?aid=42530" title="" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1444785026.761.jpg" width="130" height="95"></a>
+						<dl>
+							<dt><a href="article.php?aid=42530" title="" target="_blank">我协会会长沈荣勤参加浙江银行业支持金华经济转型发展</a></dt>
+							<dd>8月6日，我协会会长沈荣勤应邀出席浙江银行业支持金华经济转型发展推进会并致辞。</dd>
+						</dl>
+						<div class="cl"></div>
+					</div>
+					<div class="y_10"></div>
+					<ul>
+											<li><a href="article.php?aid=44363" title="省协会召开法律专业委员会2016年度工作会议" target="_blank">省协会召开法律专业委员会2016年度工作会议</a><span>02.01</span></li>
+											<li><a href="article.php?aid=44362" title="省协会召开代表处2016年度工作会议" target="_blank">省协会召开代表处2016年度工作会议</a><span>02.01</span></li>
+											<li><a href="article.php?aid=44288" title="浙江省银行业协会党支部正式成立" target="_blank">浙江省银行业协会党支部正式成立</a><span>01.27</span></li>
+											<li><a href="article.php?aid=44222" title="天津市银行业协会一行到我协会交流" target="_blank">天津市银行业协会一行到我协会交流</a><span>01.20</span></li>
+											<li><a href="article.php?aid=44064" title="首届“仲裁公信力”论坛暨颁奖典礼在京举行 我协会荣获特别贡献奖" target="_blank">首届“仲裁公信力”论坛暨颁奖典礼在京举行 我协会荣</a><span>12.31</span></li>
+										</ul>
+				</div>
+				<div class="y_15"></div>
+				<div class="nav"><span>会员信息<font>Membership</font></span><a href="article_list.php?tid=7" title="" target="_blank">更多...</a></div>
+				<div class="meb">
+										<div class="le">
+						<dl>
+							<dt><a href="article.php?aid=43002" title="中信银行台州分行开展服务礼仪大赛提升客户服务品质" target="_blank"><img src="http://www.zjabank.org//upload_img/news/small/1444784773.479.jpg" width="130" height="95"></a></dt>
+							<dd><a href="article.php?aid=43002" title="">中信银行台州分行开展服务礼仪大</a></dd>
+						</dl>
+					</div>
+					<ul>
+												<li><a href="article.php?aid=44433" title="泰隆银行杭州富阳支行对袁家村新" target="_blank">泰隆银行杭州富阳支行对袁家村新</a><span>02.18</span></li>
+												<li><a href="article.php?aid=44425" title="建行台州分行持续推进“心防工程" target="_blank">建行台州分行持续推进“心防工程</a><span>02.17</span></li>
+												<li><a href="article.php?aid=44424" title="银行开进社区居民纷纷点赞" target="_blank">银行开进社区居民纷纷点赞</a><span>02.17</span></li>
+												<li><a href="article.php?aid=44423" title="浅谈柜面业务风险管理" target="_blank">浅谈柜面业务风险管理</a><span>02.17</span></li>
+												<li><a href="article.php?aid=44422" title="浅谈互联网金融信息安全问题及对" target="_blank">浅谈互联网金融信息安全问题及对</a><span>02.16</span></li>
+											</ul>
+					<div class="cl"></div>
+									</div>
+			</div>
+			<!--center end-->
+			<!--right start-->
+			<div class="right">
+				<div class="round1"></div>
+				<div class="round2"></div>
+				<form action="" method="post" name="sub">
+				<div class="login">
+				<div class="nav">登录<span>Notice</span></div>
+					<dl>
+						<dd><input type="text" value="请输入银行简称" class="txt" onmousedown="down('yhname')" id="yhname" onblur="leve('yhname')" name="yhname"/></dd>
+						<dd><input type="text" value="请输入用户名" class="txt" onmousedown="down('name')" id="name" onblur="leve('name')" name="name"/></dd>
+						<dd >
+						<select name="type" id="type" style="width:200px;height:30px;;" onchange="showphone(this)">
+									<option value="">请选择用户类型</option>
+																		<option value="1">审慎录用人员</option>
+																		<option value="2">银团产品</option>
+																		<option value="3">信贷产品</option>
+																		<option value="4">编辑人员</option>
+																		<option value="5">管理审慎录用</option>
+																		<option value="6">不诚信机构</option>
+																		<option value="7">不诚信机构管理</option>
+																		<option value="8">银行产品管理</option>
+																</select> </dd>
+						<dd><input type="password" value="请输入密码" class="txt" id="pass" name="pass" onmousedown="down('pass')" onblur="leve('pass')"/></dd>
+						<dd><input type="submit" value="" class="btn"></dd>
+					</dl>				</div>
+				</form>
+				<div class="tub">
+					<div class="round3"></div>
+					<div class="round4"></div>
+					<a href="http://www.zjabank.org/xhcp/" target="_blank" title=""><img src="images/tub1.gif"></a>
+					<a href="letters_ower.php" title=""><img src="images/tub2.gif"></a>
+					<a href="http://mail.zjabank.org/" title="" target="__blank"><img src="images/tub3.gif"></a>
+					<a href="http://www.zjabank.org/article_list.php?tid=5&mid=90" title=""><img src="images/tub4.gif"></a>
+				</div>
+			</div>
+			<!--right end-->
+			<div class="cl"></div>
+		</div>
+			<div class="y_10"style="text-align:right;margin-right:70px;">
+			    网站已被浏览【<b>22237</b>】次		    </div>
+		<div class="gundong"><marquee behavior=scroll direction=left align=middle onMouseOver="this.stop()" onMouseOut="this.start()">
+				<a href="article.php?aid=44362" title="" style="color:#139bcd;">省协会召开代表处2016年度工作会议</a>
+				<a href="article.php?aid=44215" title="" style="color:#139bcd;">公告</a>
+				<a href="article.php?aid=44197" title="" style="color:#139bcd;">2015浙江银行业文明规范服务创建成果</a>
+				<a href="article.php?aid=44064" title="" style="color:#139bcd;">首届“仲裁公信力”论坛暨颁奖典礼在京举行 我协会荣获特别贡献奖</a>
+				<a href="article.php?aid=44009" title="" style="color:#139bcd;">中国破产法论坛房地产企业破产专题研讨会在杭召开</a>
+				<a href="article.php?aid=43999" title="" style="color:#139bcd;">省协会结算与电子银行专业委员会结算专业小组召开部分成员行会议</a>
+				<a href="article.php?aid=43910" title="" style="color:#139bcd;">新书征订公告</a>
+				<a href="article.php?aid=43864" title="" style="color:#139bcd;">我协会成功举办浙江银行业法人机构高级管理人员企业社会责任培训</a>
+				</marquee></div>
+		<div class="y_10"></div>
+		<div class="link"><div class="nav">友情链接<span>Link</span></div>
+<select name=""  onchange="showlink(this.value)">
+	  <option value="">--政府监管部门链接--</option>
+	  	  <option value="http://www.zjs.org.cn">--浙江经济网--</option>
+	  	  <option value="http://www.pbc.gov.cn/">--中国人民银行--</option>
+	  	  <option value="http://www.cbrc.gov.cn/index.html">--中国银监会--</option>
+	  	  <option value="http://www.csrc.gov.cn/pub/newsite/">--中国证监会--</option>
+	  	  <option value="http://www.circ.gov.cn/web/site0/">--中国保监会--</option>
+	  	</select>
+	<select name="huiyuan" onchange="showlink(this.value)">
+	  <option value="">--会员单位链接--</option>
+	  	  <option value="http://www.ccb.com/zj/">--建设银行浙江省分行--</option>
+	  	  <option value="http://www.bankofshanghai.com/servlet/ServletGate">--上海银行杭州分行--</option>
+	  	  <option value="http://www.bankofbeijing.com.cn/">--北京银行杭州分行--</option>
+	  	  <option value="http://www.njcb.com.cn/art/2011/1/10/art_63_3390.html">--南京银行杭州分行--</option>
+	  	  <option value="http://www.jsbchina.cn/news/fhlm/hzfh/esbbz.html">--江苏银行杭州分行--</option>
+	  	  <option value="http://www.wzcb.com.cn/index.php/home">--温州银行杭州分行--</option>
+	  	  <option value="http://www.hz.tzbank.com/hzfh/index.jsp">--台州银行杭州分行--</option>
+	  	  <option value="http://www.jhccb.com.cn/">--金华银行杭州分行--</option>
+	  	  <option value="http://www.zj96596.com/">--浙江省农信联社--</option>
+	  	  <option value="http://www.psbc.com/portal/zh_CN/CreditCard/SpecialOffers/29184.html">--邮储银行浙江省分行--</option>
+	  	  <option value="http://www.cbhb.com.cn/bhbank/S101/">--渤海银行杭州分行--</option>
+	  	  <option value="http://www.egbank.com.cn/index.shtml">--恒丰银行杭州分行--</option>
+	  	  <option value="http://www.bankcomm.com/BankCommSite/cn/index.html">--交通银行浙江省分行--</option>
+	  	  <option value="http://www.cebbank.com/Site/ceb/cn">--光大银行杭州分行--</option>
+	  	  <option value="http://www.cib.com.cn/netbank/cn/Branch/HanZhou/">--兴业银行杭州分行--</option>
+	  	  <option value="http://bank.ecitic.com/demand/07.html">--中信银行杭州分行--</option>
+	  	  <option value="http://www.spdb.com.cn/docpage/c212/200712/1211_212_15336.aspx">--浦发银行杭州分行--</option>
+	  	  <option value="http://www.hxb.com.cn/chinese/index.html">--华夏银行杭州分行--</option>
+	  	  <option value="http://branch.cmbchina.com/0571.htm">--招商银行杭州分行--</option>
+	  	  <option value="http://www.cgbchina.com.cn/">--广发银行杭州分行--</option>
+	  	  <option value="http://bank.pingan.com/">--平安银行杭州分行--</option>
+	  	  <option value="http://www.cmbc.com.cn/index.shtml">--民生银行杭州分行--</option>
+	  	  <option value=" http://www.hrflc.com/">--华融资产浙江省分公司--</option>
+	  	  <option value="http://www.gwamcc.com/">--长城资产杭州办事处--</option>
+	  	  <option value="http://www.chinaums.com/zhejiang/Channel/453637">--银联浙江分公司--</option>
+	  	  <option value="http://www.zttrust.com.cn/">--中投信托公司--</option>
+	  	  <option value="http://www.wxtrust.com/">--万向信托公司--</option>
+	  	  <option value="http://www.hztrust.com/">--杭州工商信托公司--</option>
+	  	  <option value="http://secc.cmbchina.com/">--招商银行小企业信贷中心杭州分中心--</option>
+	  	  <option value="http://www.hrflc.com/">--华融金融租赁公司--</option>
+	  	  <option value="http://www.nbba.org.cn/index.html">--宁波市银行业协会--</option>
+	  	  <option value="http://jxyhyxh.com/">--嘉兴市银行业协会--</option>
+	  	  <option value="http://www.hzyinxie.net/html/index.asp">--湖州市银行业协会--</option>
+	  	  <option value="http://www.wxcw.cn/">--万向财务公司--</option>
+	  	  <option value="http://www.uobchina.com.cn/cn/home.html">--大华银行杭州分行--</option>
+	  	  <option value="http://www.societegenerale.cn/cn/index.htm">--法国兴业银行杭州分行--</option>
+	  	  <option value="http://www.cinda.com.cn/">--信达资产浙江分公司--</option>
+	  	  <option value="http://www.smbc.co.jp/">--三井住友银行杭州分行--</option>
+	  	  <option value="http://www.hkbea.com.cn/">--东亚银行杭州分行--</option>
+	  	  <option value="http://www.hsbc.com.cn/1/2/?WT.mc_id=HBCN_wb2683s22702&WT.srch=1">--汇丰银行杭州分行--</option>
+	  	  <option value="http://www.citibank.com.cn/homepage/cn/cn_homepage.htm">--花旗银行杭州分行--</option>
+	  	  <option value="http://www.hangseng.com.cn/1/2/home-chi/">--恒生银行杭州分行--</option>
+	  	  <option value="http://www.standardchartered.com.cn/zh/index.html">--渣打银行杭州分行--</option>
+	  	  <option value="http://www.ncbchina.cn/cn/index.html">--南洋商业银行杭州分行--</option>
+	  	  <option value="http://www.dbs.com/cn/sc/Pages/default.aspx">--星展银行杭州分行--</option>
+	  	  <option value="http://www.coamc.com.cn/">--东方资产杭州办事处--</option>
+	  	  <option value="http://www.hccb.com.cn/">--杭州银行--</option>
+	  	  <option value="http://www.czbank.com/czbank/">--浙商银行--</option>
+	  	  <option value="http://www.nbcb.com.cn/">--宁波银行杭州分行--</option>
+	  	  <option value="http://www.urcb.com/">--杭州联合银行--</option>
+	  	  <option value="http://www.zjtlcb.com/site1/index.shtml">--泰隆银行杭州分行--</option>
+	  	  <option value="http://www.czcb.com.cn/">--稠州银行杭州分行--</option>
+	  	  <option value="http://www.mintaibank.com/mintaibank/zh_CN/home/index.html">--民泰银行杭州分行--</option>
+	  	  <option value="http://www.cdb.com.cn/web/">--国家开发银行浙江省分行--</option>
+	  	  <option value="http://www.adbc.com.cn/zhejiang/">--农业发展银行浙江省分行--</option>
+	  	  <option value="http://www.eximbank.gov.cn/">--进出口银行浙江省分行--</option>
+	  	  <option value="http://www.zj.icbc.com.cn/icbc/%E6%B5%99%E6%B1%9F%E5%88%86%E8%A1%8C/">--工商银行浙江省分行--</option>
+	  	  <option value="http://www.95599.cn/cn/branch/zj/">--农业银行浙江省分行--</option>
+	  	  <option value="http://www.zj.bank-of-china.com/">--中国银行浙江省分行--</option>
+	  	</select>
+	<select name=""  onchange="showlink(this.value)">
+	  <option value="">--兄弟协会链接--</option>
+	  	  <option value="http://www.china-cba.net/">--中国银行业协会--</option>
+	  	  <option value="http://www.xjbanker.com/">--新疆银行业协会--</option>
+	  	  <option value="http://www.ahbanker.com/">--安徽银行业协会 --</option>
+	  	  <option value="http://www.hnba.com.cn/">--海南银行业协会--</option>
+	  	  <option value="http://www.gxgba.com/index">--广西银行业协会--</option>
+	  	  <option value="http://www.nmgyx.org/">--内蒙古银行业协会--</option>
+	  	  <option value="http://www.cqbanker.com/">--重庆市银行业协会--</option>
+	  	  <option value="http://www.zjbaoxian.com/">--浙江保险行业协会--</option>
+	  	  <option value="http://www.zjsa.net.cn/">--浙江证券行业协会--</option>
+	  	  <option value="http://www.fazj.org/">--浙江期货行业协会--</option>
+	  	  <option value="http://www.zjlca.com/">--浙江上市公司协会--</option>
+	  	  <option value="http://www.bbanet.org/">--北京市银行业协会--</option>
+	  	  <option value="http://www.tabc.com.cn/">--天津市银行业协会--</option>
+	  	  <option value="http://www.sbacn.org/">--上海市银行同业公会--</option>
+	  	  <option value="http://www.ynyhxh.com/">--云南省银行业协会--</option>
+	  	  <option value="http://www.fj-ba.com/">--福建省银行业协会--</option>
+	  	  <option value="http://www.gzbag.org/">--贵州省银行业协会--</option>
+	  	  <option value="http://www.qhyhxh.org/cn_index.asp">--青海省银行业协会--</option>
+	  	  <option value="http://www.sxyhxh.com/">--陕西省银行业协会--</option>
+	  	  <option value="http://www.gsyhyxh.com/www/default.asp">--甘肃省银行业协会--</option>
+	  	  <option value="http://www.hnyhxh.com/">--湖南省银行业协会--</option>
+	  	  <option value="http://www.ehbab.com/">--湖北省银行业协会--</option>
+	  	  <option value="http://www.jlsyx.com/">--吉林省银行业协会--</option>
+	  	  <option value="http://www.sdban.com/">--山东省银行业协会--</option>
+	  	  <option value="http://www.sxbankas.com/">--山西省银行业协会--</option>
+	  	  <option value="http://www.gdbag.com/bankIndex.do;jsessionid=A35747102C8DFD7E834CD25DBEBCCE44?method=toIndex">--广东银行同业公会--</option>
+	  	  <option value="http://jsbank.org:3389/">--江苏省银行业协会--</option>
+	  	  <option value="http://www.jxbanking.com/">--江西省银行业协会--</option>
+	  	  <option value="http://www.hb-ba.com/">--河北省银行业协会--</option>
+	  	  <option value="http://www.hnsyhyxh.com/">--河南省银行业协会--</option>
+	  	  <option value="http://www.hnba.com.cn/">--海南省银行业协会--</option>
+	  	</select>
+	<script>
+	function showlink(ul){
+	  var url=ul;
+		 window.open(url);
+	  }
+	</script>
+</div>	</div>
+	<div class="y_10"></div>
+	<div class="footer">
+	<ul>
+		<li>Copyright& 2013-2-15&nbsp;&nbsp;&nbsp;版权所有：浙江省银行业协会&nbsp;&nbsp;&nbsp;浙ICP备13024687&nbsp;&nbsp;&nbsp;技术支持：杭州网</li>
+		<li>地址：杭州市解放路187号&nbsp;&nbsp;&nbsp;邮编：310001&nbsp;&nbsp;&nbsp;传真：0571-87189503&nbsp;&nbsp;&nbsp;邮箱：public@zjabank.org</li>
+	</ul>
+</div>
+<!--<div id="codefans_net" style="position:absolute;left:0;top:0;z-index:999;">
+//链接地址<a href="" target="_blank">
+//图片地址<img src="http://www.zjabank.org//upload_img/news/" border="0">
+</a>
+</div>
+<script> 
+var xlzl = 50,ylzl = 60 
+var xinlzl = true, yinlzl = true 
+var step = 1 
+var delay = 10 
+var objlzl2=document.getElementById("codefans_net") 
+function float() { 
+var Llzl=Tlzl=0
+var Rlzl= document.body.clientWidth-objlzl2.offsetWidth 
+var Blzl = document.body.clientHeight-objlzl2.offsetHeight 
+objlzl2.style.left = xlzl+"px"; 
+objlzl2.style.top = ylzl+"px";  
+//alert(objlzl2.style.left);
+xlzl = xlzl + step*(xinlzl?1:-1) 
+if (xlzl < Llzl) {xinlzl = true; xlzl = Llzl} 
+if (xlzl > Rlzl){xinlzl = false; xlzl = Rlzl} 
+ylzl = ylzl + step*(yinlzl?1:-1)
+if (ylzl < Tlzl) {yinlzl = true; ylzl = Tlzl } 
+if (ylzl > Blzl) {yinlzl = false; ylzl = Blzl } 
+//setTimeout("float()", delay)
+}
+var itl= setInterval("float()", delay) 
+objlzl2.onmouseover=function(){clearInterval(itl)} 
+objlzl2.onmouseout=function(){itl=setInterval("float()", delay)} 
+</script>
+-->
+ 
+
+
+<!-- Piwik zhlsh45 2014-04-21 -->
+<script type="text/javascript">
+/*
+  var _paq = _paq || [];
+  _paq.push(['setDocumentTitle', "银行协会首页"]);//document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://localhost/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+  */
+</script>
+<!--<noscript><p><img src="http://localhost/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>-->
+<!-- End Piwik Code -->
+<!--<DIV id="img1" style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+ visibility: visible;">
+<a href="http://www.zjabank.org/shipin.php" target="_blank">
+<img src="http://www.zjabank.org/images/lqyjr.png" border="0" width="100" height="100">
+</a>
+</DIV>
+<SCRIPT src="js/js.js"></SCRIPT>-->
+</body>
+</html>
